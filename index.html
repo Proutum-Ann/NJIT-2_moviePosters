@@ -34,13 +34,13 @@
 
 	      <div class="row">
 
-	        <div class="col-md-6" v-for="movies, index in movies">
+	        <div class="col-md-6" v-for="movies, posterindex in movies">
 	            <div class="thumbnail">
 
 						<img class="poster img-fluid"/>
-						<div class="imageInfo">{{ posterindex }}</div>
+						<div class="imageInfo">{{ movies.posterindex }}</div>
 
-						<p class="title">{{ title }} ({{ country }})</p>
+						<p class="title">{{ movies.title }} ({{ movies.country }})</p>
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{ iscore }} </p>
 						<p class="runtime">Runtime: {{ runtime }}</p>
 						<p class="released">Released: {{ released }} | Rated: {{ rating }}</p>
