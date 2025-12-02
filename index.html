@@ -34,21 +34,21 @@
 
 	      <div class="row">
 
-	        <div class="col-md-6" v-for="movies, posterindex in movies">
+	        <div class="col-md-6" v-for="(movie, index) in movies">
 	            <div class="thumbnail">
 
-						<img class="poster img-fluid"/>
-						<div class="imageInfo">{{ movies.posterindex }}</div>
+						<img class="poster img-fluid" @click="posterClick(index)" :src="movie.posters[movie.posterindex]"/>
+						<div class="imageInfo">{{ index + 1 }}</div>
 
-						<p class="title">{{ movies.title }} ({{ movies.country }})</p>
-						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{ iscore }} </p>
-						<p class="runtime">Runtime: {{ runtime }}</p>
-						<p class="released">Released: {{ released }} | Rated: {{ rating }}</p>
-						<p class="websites">Websites: <a :href="imdb"> imdb </a> | <a :href="website">website</a></p>
+						<p class="title">{{ movie.title }} ({{ movie.country }})</p>
+						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{ movie.iscore }} </p>
+						<p class="runtime">Runtime: {{ timeText(movie.runtime) }}</p>
+						<p class="released" >Released: {{ makeTextDate(movie.released) }} | Rated: {{ movie.rating }}</p>
+						<p class="websites">Websites: <a :href="movie.imdb"> imdb </a> | <a :href="movie.website">website</a></p>
 
 			            <div class="social">
-			              <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{ likes }}</p>
-			              <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{ dislikes }}</p>
+			              <p class="likes" v-on:click="like(index)"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}</p>
+			              <p class="dislikes" v-on:click="dislike(index)"><i class="bi bi-hand-thumbs-down"></i> {{ movie.dislikes }}</p>
 			            </div>
 	            </div>
 	        </div>
@@ -67,9 +67,7 @@
 
   	<!-- This load the Vue.js code -->
 	<script type="text/javascript" src="site.js"></script>
-	<script>
-      const mountedApp = app.mount("#vue_app")
-    </script>
+
 
 </body>
 </html>

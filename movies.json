@@ -68,5 +68,19 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Puella Magi Madoka Magica the Movie Part III: The Rebellion Story",
+            "iscore": 7.8,
+            "rating": "Not Rated",
+            "runtime": 116,
+            "released": [2013, 10, 26],
+            "country": "Japan",
+            "posters": ["img/pmmm_rebellion.jpg", "img/pmmm_rebellion2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt2457282",
+            "website": "https://madokamagicausa.com/tv/rebellion/",
+            "likes": 1200,
+            "dislikes": 118,
+            "posterindex": 0
       }
 ]

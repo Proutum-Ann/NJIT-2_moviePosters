@@ -35,12 +35,65 @@ const vue_app = Vue.createApp({
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
             owner: "Annie L.",
-            siteTitle: `IMDB ${this.owner}'s Top 8 Movies`,
+            siteTitle: 'IMDB Annie\'s Top 8 Movies',
             github: "https://github.com/Proutum-Ann/NJIT-2_moviePosters"
       }
     },
     methods: {
       /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+      makeTextDate(dateArray){
+            let month = ""
+            let releaseDate = ""
+            if(dateArray[1] === 1){
+                  month = "January"
+            } else if (dateArray[1] === 2){
+                  month = "February"
+            } else if (dateArray[1] === 3){
+                  month = "March"
+            } else if (dateArray[1] === 4){
+                  month = "April"
+            } else if (dateArray[1] === 5){
+                  month = "May"
+            } else if (dateArray[1] === 6){
+                  month = "June"
+            } else if (dateArray[1] === 7){
+                  month = "July"
+            } else if (dateArray[1] === 8){
+                  month = "August"
+            } else if (dateArray[1] === 9){
+                  month = "September"
+            } else if (dateArray[1] === 10){
+                  month = "October"
+            } else if (dateArray[1] === 11){
+                  month = "November"
+            } else {
+                  month = "December"
+            }
+
+            releaseDate = month + " " + dateArray[2] + ", " + dateArray[0]
+            return releaseDate
+      }, 
+      like(index){
+            likes[index] += 1
+            return likes[index]
+      }, 
+      dislike(index){
+            dislikes[index] += 1
+            return dislikes[index]
+      }, 
+      posterClick(index){
+            return this.movies[index].posterindex = (this.movies[index].posterindex + 1) % this.movies[index].posters.length
+      }, 
+      timeText(minutes){
+            let finalTime = ""
+
+            let hour = Math.floor(minutes / 60)
+            let mins = minutes - (hour * 60)
+
+            finalTime = hour + "hr. " + mins + "min."
+
+            return finalTime
+      }
     }
 })
 
