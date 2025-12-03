@@ -91,6 +91,12 @@ const vue_app = Vue.createApp({
             finalTime = hour + "hr. " + mins + "min."
 
             return finalTime
+      },
+      imageInfo(index){
+            let posterIndex = this.movies[index].posterindex + 1
+            let totalPoster = this.movies[index].posters.length
+
+            return "Poster " + posterIndex + " of " + totalPoster
       }
     }
 })
