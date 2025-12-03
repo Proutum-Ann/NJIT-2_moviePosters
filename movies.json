@@ -82,5 +82,33 @@
             "likes": 1200,
             "dislikes": 118,
             "posterindex": 0
+      },
+      {
+            "title": "Colorful Stage! The Movie: A Miku Who Can't Sing",
+            "iscore": 6.5,
+            "rating": "PG",
+            "runtime": 110,
+            "released": [2025, 1, 17],
+            "country": "Japan",
+            "posters": ["img/colorful_stage.jpg", "img/colorful_stage2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt33050528",
+            "website": "https://gkids.com/films/colorful-stage/",
+            "likes": 730,
+            "dislikes": 69,
+            "posterindex": 0
+      },
+      {
+            "title": "KPop Demon Hunters",
+            "iscore": 7.5,
+            "rating": "PG",
+            "runtime": 95,
+            "released": [2025, 6, 20],
+            "country": "USA",
+            "posters": ["img/kpop_dh.jpg", "img/kpop_dh2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt2457282",
+            "website": "https://madokamagicausa.com/tv/rebellion/",
+            "likes": 23000,
+            "dislikes": 2600,
+            "posterindex": 0
       }
 ]

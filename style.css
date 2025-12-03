@@ -48,6 +48,11 @@ body {
 	padding-right: 5px;
 }
 
+.poster {
+    max-height: 750px;
+    width: 100%
+}
+
 /* This stylizes your Title and Rating Text */
 .title,
 .released {
@@ -108,14 +113,6 @@ body {
     transition: 500ms;
 }
 
-.likes:hover {
-    background-color: #ffd050;
-}
-
-.dislikes:hover {
-    background-color: #bb1c00;
-}
-
 /* This makes sure your Github Button is centered */
 .footer {
     text-align: center;
@@ -128,3 +125,10 @@ body {
 }
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+.likes:hover {
+    background-color: #ffd050;
+}
+
+.dislikes:hover {
+    background-color: #bb1c00;
+}
