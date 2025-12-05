@@ -29,7 +29,7 @@ body {
     position: relative;
     padding: 20px;
     margin: 20px;
-    border-radius: 0;
+    border-radius: 10px;
     background-color:#dddddd;
 }
 .thumbnail img {
@@ -37,6 +37,12 @@ body {
     margin-bottom: 30px;
     padding: 5px;
     border: 2px dashed black;
+    box-shadow: #444 0 0 10px;
+    transition: .5s
+}
+
+.thumbnail img:hover {
+    transform: scale(1.05);
 }
 
 /* This stylizes your "Poster X of Y" text */
@@ -49,7 +55,7 @@ body {
 }
 
 .poster {
-    max-height: 750px;
+    height: 750px;
     width: 100%
 }
 
