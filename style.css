@@ -19,7 +19,7 @@ body {
 
 /* This stylizes the main page area */
 .main {
-    background-color: #f2f2f2;
+    background-color: #7c0025;
     padding: 40px 0;
 }
 
@@ -30,19 +30,19 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    background-color:#dddddd;
+    background-color:#fff6ce;
 }
 .thumbnail img {
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 5px;
-    border: 2px dashed black;
-    box-shadow: #444 0 0 10px;
+    border: 2px dashed #f1ae55;
     transition: .5s
 }
 
 .thumbnail img:hover {
     transform: scale(1.05);
+    box-shadow: #444 0 0 10px;
 }
 
 /* This stylizes your "Poster X of Y" text */
@@ -133,8 +133,10 @@ body {
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
 .likes:hover {
     background-color: #ffd050;
+    color: #9b3900
 }
 
 .dislikes:hover {
     background-color: #bb1c00;
+    color: #fff3cc
 }
