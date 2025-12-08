@@ -5,7 +5,21 @@ body {
     padding: 0;
     width: 100%;
     overflow: auto;
-    background-image: url(img/geometry.jpg);
+    background: radial-gradient(#2b2b2b, #000);
+    font-family: "adriane", serif;
+    color: #301a0b
+}
+
+.websites a {
+    text-decoration: none;
+    color: #301a0b;
+    transition: .5s;
+}
+
+.websites a:hover {
+    color: #ffd050;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 /* This stylizes the header area */
@@ -15,6 +29,9 @@ body {
 .header h1 {
     display: inline-block;
     color: white;
+    font-family: "titular", sans-serif;
+    font-weight: 700;
+    font-size: 400%
 }
 
 /* This stylizes the main page area */
@@ -29,7 +46,7 @@ body {
     position: relative;
     padding: 20px;
     margin: 20px;
-    border-radius: 10px;
+    box-shadow: 0 0 20px #330106;
     background-color:#fff6ce;
 }
 .thumbnail img {
@@ -42,7 +59,7 @@ body {
 
 .thumbnail img:hover {
     transform: scale(1.05);
-    box-shadow: #444 0 0 10px;
+    box-shadow: #4b371c 0 0 10px;
 }
 
 /* This stylizes your "Poster X of Y" text */
@@ -62,14 +79,14 @@ body {
 /* This stylizes your Title and Rating Text */
 .title,
 .released {
-    color: #444;
+    color: #301a0b;
     margin: 0;
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: bold;
 }
 .released,
 .rated {
-    color: #5d5d5d;
+    color: #301a0b;
     font-size: 14px;
     font-weight: 200;
 }
@@ -133,10 +150,12 @@ body {
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
 .likes:hover {
     background-color: #ffd050;
-    color: #9b3900
+    color: #9b3900;
+    font-weight: bold;
 }
 
 .dislikes:hover {
     background-color: #bb1c00;
-    color: #fff3cc
+    color: #fff3cc;
+    font-weight: bold;
 }
