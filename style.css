@@ -157,10 +157,12 @@ body {
     background-color: #ffd050;
     color: #9b3900;
     font-weight: bold;
+    border: #6cffa4 solid 3px;
 }
 
 .dislikes:hover {
     background-color: #bb1c00;
     color: #fff3cc;
     font-weight: bold;
+    border: #ff2f2f solid 3px;
 }
